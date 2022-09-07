@@ -1,2 +1,2 @@
 # learn_cs61a
-cs61 spring 2022
+cs61 Fall 2022
