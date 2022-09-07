@@ -11,17 +11,22 @@ def falling(n, k):
     1
     """
     "*** YOUR CODE HERE ***"
-    i = 1
-    p = n
-    if k == 0:
-        return 1
-    elif k == 1:
-        return n
-    else:
-        while i < k:
-            p = p * (n-i)
-            i = i + 1
-        return p 
+    # i = 1
+    # p = n
+    # if k == 0:
+    #     return 1
+    # elif k == 1:
+    #     return n
+    # else:
+    #     while i < k:
+    #         p = p * (n-i)
+    #         i = i + 1
+    #     return p 
+    
+    total, stop = 1, n-k
+    while n > stop:
+        total, n = total*n, n-1
+    return total
 
 
 def sum_digits(y):
